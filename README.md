@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Uriel 👋</h1>
+<h1 align="center">Hola, Soy Uriel 👋</h1>
 <p align="center"><i>Student · Learning by building</i></p>
 
 <p align="center">
