@@ -24,8 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      # Coffee palette: espresso background, latte text, caramel + Claude-orange accents
-      CARD_THEME: bg_color=1E1915&title_color=D97757&icon_color=D4A373&text_color=E8DCCB&ring_color=D97757&border_radius=12&hide_border=true
+      # Navy palette: midnight background, ice text, royal-blue accents
+      CARD_THEME: bg_color=0D1B33&title_color=5B8DEF&icon_color=8FB3FF&text_color=E6EEFF&ring_color=4169E1&border_radius=12&hide_border=true
     steps:
       - uses: actions/checkout@v6
 
@@ -45,13 +45,13 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Contribution snake (coffee-bean edition)
+      - name: Contribution snake (navy edition)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            profile/snake.svg?palette=github-light&color_snake=#D97757&color_dots=#EBEDF0,#E6CCB2,#DDB892,#B08968,#7F5539
-            profile/snake-dark.svg?palette=github-dark&color_snake=#D97757&color_dots=#161B22,#4A3428,#7F5539,#B08968,#DDB892
+            profile/snake.svg?palette=github-light&color_snake=#4169E1&color_dots=#EBEDF0,#D6E2F5,#A8BEDF,#5F7BA8,#1B2F5E
+            profile/snake-dark.svg?palette=github-dark&color_snake=#4F7FFF&color_dots=#161B22,#16243D,#22385E,#34507F,#5A73A0
 
       - name: Commit cards
         run: |
